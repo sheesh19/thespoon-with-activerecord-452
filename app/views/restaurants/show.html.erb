@@ -1,0 +1,11 @@
+<h2>See This Restaurant</h2>
+
+
+<p class="">Name: <%= @restaurant.name %></p>
+<p class="">Rating: <%= @restaurant.rating %></p>
+
+<p class="">Address: <%= @restaurant.address %></p>
+
+<%= link_to "Back to Home", restaurants_path %>
+<%= link_to "Edit Restaurant", edit_restaurant_path(@restaurant) %>
+<%= link_to "Delete Restaurant", restaurant_path(@restaurant), method: :delete, data: { confirm: "Are you certain?" } %>
